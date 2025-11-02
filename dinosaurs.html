@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dinosaurs - Dinosaurs & Fossils: Wonders of Prehistoric Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dinosaurs.css">
+</head>
+<body>
+    <header>
+        <h1>Dinosaurs &amp; Fossils</h1>
+        <p>Wonders of Prehistoric Life</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="dinosaurs.html" class="active">Dinosaurs</a>
+        <a href="fossils.html">Fossils</a>
+        <a href="learnmore.html">Learn More</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search dinosaurs..." onkeyup="searchDinosaurs()">
+        </div>
+    </nav>
+    <main>
+        <fieldset id="dinosaurs">
+            <legend>Dinosaurs Gallery</legend>
+            <div class="flex-list" id="dinosaurList">
+                <div class="card" data-name="Tyrannosaurus Rex" data-info="Late Cretaceous carnivorous predator massive jaws teeth">
+                    <img src="Tyrannosaurus Rex.png" alt="Tyrannosaurus Rex">
+                    <h3>Tyrannosaurus Rex</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Carnivorous predator</li>
+                        <li>Length: Up to 40 feet</li>
+                        <li>Massive jaws, 60+ sharp teeth</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Triceratops" data-info="Late Cretaceous herbivore three horns frill">
+                    <img src="Triceratops.png" alt="Triceratops">
+                    <h3>Triceratops</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Herbivore with three facial horns</li>
+                        <li>Over 30 feet long</li>
+                        <li>Enormous skull, large frill</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Velociraptor" data-info="Late Cretaceous small fast predator claws">
+                    <img src="Velociraptor.png" alt="Velociraptor">
+                    <h3>Velociraptor</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Small, fast, agile predator</li>
+                        <li>Sickle-shaped claws</li>
+                        <li>Fossils mostly from Mongolia</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Brachiosaurus" data-info="Late Jurassic herbivore long neck tall">
+                    <img src="https://dinosaurpictures.org/images/Brachiosaurus.jpg" alt="Brachiosaurus">
+                    <h3>Brachiosaurus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Herbivore, long-necked</li>
+                        <li>Stood up to 45 feet tall</li>
+                        <li>Fed on high vegetation</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Ankylosaurus" data-info="Late Cretaceous armored club tail defensive">
+                    <img src="https://dinosaurpictures.org/images/Ankylosaurus.jpg" alt="Ankylosaurus">
+                    <h3>Ankylosaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Armored body, club-like tail</li>
+                        <li>20 feet long, defensive nature</li>
+                        <li>Protection against predators</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Stegosaurus" data-info="Late Jurassic herbivore plates spikes tail">
+                    <img src="https://dinosaurpictures.org/images/Stegosaurus.jpg" alt="Stegosaurus">
+                    <h3>Stegosaurus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Herbivore with bony plates</li>
+                        <li>Spiked tail for defense</li>
+                        <li>Over 30 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Spinosaurus" data-info="Cretaceous carnivore aquatic sail back">
+                    <img src="https://dinosaurpictures.org/images/Spinosaurus.jpg" alt="Spinosaurus">
+                    <h3>Spinosaurus</h3>
+                    <ul>
+                        <li>Cretaceous period</li>
+                        <li>Carnivore, semi-aquatic</li>
+                        <li>Largest predatory dinosaur</li>
+                        <li>Sail-like structure on back</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Pachycephalosaurus" data-info="Late Cretaceous herbivore thick skull head-butting">
+                    <img src="https://dinosaurpictures.org/images/Pachycephalosaurus.jpg" alt="Pachycephalosaurus">
+                    <h3>Pachycephalosaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Herbivore, thick skull</li>
+                        <li>Possible head-butting behavior</li>
+                        <li>Medium size dinosaur</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Deinocheirus" data-info="Late Cretaceous omnivore large claws hump">
+                    <img src="https://dinosaurpictures.org/images/Deinocheirus.jpg" alt="Deinocheirus">
+                    <h3>Deinocheirus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Omnivore, large claws</li>
+                        <li>Long arms, humped back</li>
+                        <li>Up to 11 meters long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Allosaurus" data-info="Late Jurassic carnivore predator sharp teeth claws">
+                    <img src="https://dinosaurpictures.org/images/Allosaurus.jpg" alt="Allosaurus">
+                    <h3>Allosaurus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Powerful carnivorous predator</li>
+                        <li>Length: Up to 28 feet</li>
+                        <li>Sharp teeth and strong claws</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Diplodocus" data-info="Late Jurassic herbivore long neck tail whip">
+                    <img src="https://dinosaurpictures.org/images/Diplodocus.jpg" alt="Diplodocus">
+                    <h3>Diplodocus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Herbivore with extremely long neck and tail</li>
+                        <li>Up to 90 feet long</li>
+                        <li>Used tail like a whip for defense</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Parasaurolophus" data-info="Late Cretaceous herbivore crest duck-billed hadrosaur">
+                    <img src="https://dinosaurpictures.org/images/Parasaurolophus.jpg" alt="Parasaurolophus">
+                    <h3>Parasaurolophus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Herbivorous duck-billed dinosaur</li>
+                        <li>Distinctive curved cranial crest</li>
+                        <li>Used crest to produce sounds</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Carnotaurus" data-info="Late Cretaceous carnivore horns bull short arms">
+                    <img src="https://dinosaurpictures.org/images/Carnotaurus.jpg" alt="Carnotaurus">
+                    <h3>Carnotaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Carnivore with bull-like horns</li>
+                        <li>Extremely short arms</li>
+                        <li>Fast runner, up to 25 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Iguanodon" data-info="Early Cretaceous herbivore thumb spike bipedal quadrupedal">
+                    <img src="https://dinosaurpictures.org/images/Iguanodon.jpg" alt="Iguanodon">
+                    <h3>Iguanodon</h3>
+                    <ul>
+                        <li>Early Cretaceous period</li>
+                        <li>Herbivore with distinctive thumb spike</li>
+                        <li>Could walk on two or four legs</li>
+                        <li>Up to 33 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Pteranodon" data-info="Late Cretaceous flying reptile pterosaur wingspan crest">
+                    <img src="https://dinosaurpictures.org/images/Pteranodon.jpg" alt="Pteranodon">
+                    <h3>Pteranodon</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Flying reptile (pterosaur, not dinosaur)</li>
+                        <li>Wingspan up to 23 feet</li>
+                        <li>Large head crest, fish eater</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Archaeopteryx" data-info="Late Jurassic bird-like feathers wings transitional fossil">
+                    <img src="https://dinosaurpictures.org/images/Archaeopteryx.jpg" alt="Archaeopteryx">
+                    <h3>Archaeopteryx</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Transitional species between dinosaurs and birds</li>
+                        <li>Had feathers and wings</li>
+                        <li>Size of a raven, could fly</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Compsognathus" data-info="Late Jurassic small carnivore tiny fast chicken-sized">
+                    <img src="https://dinosaurpictures.org/images/Compsognathus.jpg" alt="Compsognathus">
+                    <h3>Compsognathus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>One of the smallest known dinosaurs</li>
+                        <li>Carnivore, chicken-sized</li>
+                        <li>Fast and agile hunter</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Mosasaurus" data-info="Late Cretaceous marine reptile aquatic predator ocean">
+                    <img src="https://dinosaurpictures.org/images/Mosasaurus.jpg" alt="Mosasaurus">
+                    <h3>Mosasaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Marine reptile (not dinosaur)</li>
+                        <li>Up to 50 feet long</li>
+                        <li>Apex predator of ancient oceans</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Gallimimus" data-info="Late Cretaceous omnivore ostrich-like fast runner">
+                    <img src="https://dinosaurpictures.org/images/Gallimimus.jpg" alt="Gallimimus">
+                    <h3>Gallimimus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Omnivore, ostrich-like dinosaur</li>
+                        <li>One of the fastest dinosaurs</li>
+                        <li>Up to 20 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Therizinosaurus" data-info="Late Cretaceous herbivore giant claws long arms bizarre">
+                    <img src="https://dinosaurpictures.org/images/Therizinosaurus.jpg" alt="Therizinosaurus">
+                    <h3>Therizinosaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Herbivore with massive claws</li>
+                        <li>Claws up to 3 feet long</li>
+                        <li>One of the strangest dinosaurs</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Dilophosaurus" data-info="Early Jurassic carnivore double crest predator">
+                    <img src="https://dinosaurpictures.org/images/Dilophosaurus.jpg" alt="Dilophosaurus">
+                    <h3>Dilophosaurus</h3>
+                    <ul>
+                        <li>Early Jurassic period</li>
+                        <li>Carnivorous predator</li>
+                        <li>Double crests on head</li>
+                        <li>About 20 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Oviraptor" data-info="Late Cretaceous omnivore egg thief beak crest">
+                    <img src="https://dinosaurpictures.org/images/Oviraptor.jpg" alt="Oviraptor">
+                    <h3>Oviraptor</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Omnivore with parrot-like beak</li>
+                        <li>Name means "egg thief"</li>
+                        <li>Had crest on head</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Ceratosaurus" data-info="Late Jurassic carnivore horn nose predator">
+                    <img src="https://dinosaurpictures.org/images/Ceratosaurus.jpg" alt="Ceratosaurus">
+                    <h3>Ceratosaurus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Carnivorous predator</li>
+                        <li>Horn on snout, smaller horns over eyes</li>
+                        <li>Up to 20 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Kentrosaurus" data-info="Late Jurassic herbivore spikes plates armor defensive">
+                    <img src="https://dinosaurpictures.org/images/Kentrosaurus.jpg" alt="Kentrosaurus">
+                    <h3>Kentrosaurus</h3>
+                    <ul>
+                        <li>Late Jurassic period</li>
+                        <li>Herbivore related to Stegosaurus</li>
+                        <li>Double row of spikes and plates</li>
+                        <li>15 feet long, heavily armored</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Giganotosaurus" data-info="Cretaceous carnivore giant predator bigger than T-Rex">
+                    <img src="https://dinosaurpictures.org/images/Giganotosaurus.jpg" alt="Giganotosaurus">
+                    <h3>Giganotosaurus</h3>
+                    <ul>
+                        <li>Mid Cretaceous period</li>
+                        <li>One of the largest carnivores</li>
+                        <li>Larger than T-Rex, up to 43 feet</li>
+                        <li>Pack hunter from South America</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Argentinosaurus" data-info="Cretaceous herbivore titanosaur largest heaviest giant sauropod">
+                    <img src="https://dinosaurpictures.org/images/Argentinosaurus.jpg" alt="Argentinosaurus">
+                    <h3>Argentinosaurus</h3>
+                    <ul>
+                        <li>Mid Cretaceous period</li>
+                        <li>One of the largest land animals ever</li>
+                        <li>Up to 100 feet long, 100 tons</li>
+                        <li>Massive herbivorous sauropod</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Microraptor" data-info="Early Cretaceous small feathered four wings gliding">
+                    <img src="https://dinosaurpictures.org/images/Microraptor.jpg" alt="Microraptor">
+                    <h3>Microraptor</h3>
+                    <ul>
+                        <li>Early Cretaceous period</li>
+                        <li>Small feathered dinosaur</li>
+                        <li>Four wings (on arms and legs)</li>
+                        <li>Could glide between trees</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Styracosaurus" data-info="Late Cretaceous herbivore horned frill spikes ceratopsian">
+                    <img src="https://dinosaurpictures.org/images/Styracosaurus.jpg" alt="Styracosaurus">
+                    <h3>Styracosaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Herbivore with impressive frill</li>
+                        <li>Long spikes on neck frill</li>
+                        <li>Single nose horn, up to 18 feet</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Majungasaurus" data-info="Late Cretaceous carnivore cannibal short arms Madagascar">
+                    <img src="https://dinosaurpictures.org/images/Majungasaurus.jpg" alt="Majungasaurus">
+                    <h3>Majungasaurus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Carnivore from Madagascar</li>
+                        <li>Evidence of cannibalism</li>
+                        <li>Short arms, about 20 feet long</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Dracorex" data-info="Late Cretaceous herbivore dragon-like skull spikes pachycephalosaur">
+                    <img src="https://dinosaurpictures.org/images/Dracorex.jpg" alt="Dracorex">
+                    <h3>Dracorex</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Herbivore with dragon-like appearance</li>
+                        <li>Spiky skull, flat top</li>
+                        <li>Name means "Dragon King"</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Carcharodontosaurus" data-info="Cretaceous carnivore shark teeth predator Africa massive">
+                    <img src="https://dinosaurpictures.org/images/Carcharodontosaurus.jpg" alt="Carcharodontosaurus">
+                    <h3>Carcharodontosaurus</h3>
+                    <ul>
+                        <li>Mid Cretaceous period</li>
+                        <li>Massive carnivore from Africa</li>
+                        <li>Shark-like teeth, up to 43 feet</li>
+                        <li>Rival to Spinosaurus</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Quetzalcoatlus" data-info="Late Cretaceous flying pterosaur giant wingspan giraffe height">
+                    <img src="https://dinosaurpictures.org/images/Quetzalcoatlus.jpg" alt="Quetzalcoatlus">
+                    <h3>Quetzalcoatlus</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Largest known flying animal</li>
+                        <li>Wingspan up to 36 feet</li>
+                        <li>Tall as a giraffe when standing</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Protoceratops" data-info="Late Cretaceous herbivore small ceratopsian frill Mongolia">
+                    <img src="https://dinosaurpictures.org/images/Protoceratops.jpg" alt="Protoceratops">
+                    <h3>Protoceratops</h3>
+                    <ul>
+                        <li>Late Cretaceous period</li>
+                        <li>Small herbivore with beak and frill</li>
+                        <li>About 6 feet long</li>
+                        <li>Abundant fossils found in Mongolia</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Utahraptor" data-info="Early Cretaceous carnivore large raptor sickle claw deadly">
+                    <img src="https://dinosaurpictures.org/images/Utahraptor.jpg" alt="Utahraptor">
+                    <h3>Utahraptor</h3>
+                    <ul>
+                        <li>Early Cretaceous period</li>
+                        <li>Largest known raptor species</li>
+                        <li>Up to 23 feet long, 1000 pounds</li>
+                        <li>Giant sickle claw on each foot</li>
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+        <footer>
+            &copy; 2025 Dinosaurs &amp; Fossils: Wonders of Prehistoric Life. All educational content and images used for non-commercial educational purposes only.
+        </footer>
+    </main>
+
+    <script>
+        function searchDinosaurs() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            let found = false;
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const info = card.getAttribute('data-info').toLowerCase();
+                
+                if (name.includes(filter) || info.includes(filter)) {
+                    card.style.display = 'flex';
+                    if (!found) {
+                        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    }
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

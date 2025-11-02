@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fossils - Dinosaurs & Fossils: Wonders of Prehistoric Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fossils.css">
+</head>
+<body>
+    <header>
+        <h1>Dinosaurs &amp; Fossils</h1>
+        <p>Wonders of Prehistoric Life</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="dinosaurs.html">Dinosaurs</a>
+        <a href="fossils.html" class="active">Fossils</a>
+        <a href="learnmore.html">Learn More</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search fossils..." onkeyup="searchFossils()">
+        </div>
+    </nav>
+    <main>
+        <fieldset id="fossils">
+            <legend>Types of Fossils</legend>
+            <div class="flex-list" id="fossilList">
+                <div class="card" data-name="Body Fossils" data-info="bones teeth shells actual remains preserved hard parts skeleton">
+                    <img src="https://images.pexels.com/photos/66175/pexels-photo-66175.jpeg?auto=compress&w=500" alt="Body Fossil Bones">
+                    <h3>Body Fossils</h3>
+                    <ul>
+                        <li>Actual remains like bones, teeth, shells</li>
+                        <li>Most known dinosaur fossils are body fossils</li>
+                        <li>Show the size and shape of ancient creatures</li>
+                        <li>Preserved through mineralization process</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Mold Fossils" data-info="impression imprint rock sediment shape external internal pattern">
+                    <img src="https://images.pexels.com/photos/3954234/pexels-photo-3954234.jpeg?auto=compress&w=500" alt="Mold Fossil">
+                    <h3>Mold Fossils</h3>
+                    <ul>
+                        <li>Impressions of the organism in rock</li>
+                        <li>Show detailed surface patterns</li>
+                        <li>External molds (outside surface)</li>
+                        <li>Internal molds (inside filled spaces)</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Cast Fossils" data-info="minerals filled replica shape mold hardened copy">
+                    <img src="https://images.pexels.com/photos/532259/pexels-photo-532259.jpeg?auto=compress&w=500" alt="Cast Fossil">
+                    <h3>Cast Fossils</h3>
+                    <ul>
+                        <li>Formed when a mold fills with minerals</li>
+                        <li>Recreate the specimen's shape</li>
+                        <li>Often found as fossilized shells or bones</li>
+                        <li>Allow scientists to study physical characteristics</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Trace Fossils" data-info="footprints tracks burrows nests coprolites activity behavior evidence">
+                    <img src="https://images.pexels.com/photos/41909/pexels-photo-41909.jpeg?auto=compress&w=500" alt="Trace Fossil">
+                    <h3>Trace Fossils</h3>
+                    <ul>
+                        <li>Evidence of activity like footprints, burrows, nests</li>
+                        <li>Coprolites (fossilized dung)</li>
+                        <li>Give clues about behavior and movement</li>
+                        <li>Dinosaur tracks are famous examples</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Carbon Fossils" data-info="carbon film thin layer leaf plant delicate outline impression">
+                    <img src="https://images.pexels.com/photos/720154/pexels-photo-720154.jpeg?auto=compress&w=500" alt="Carbon Fossil Leaf">
+                    <h3>Carbon Fossils</h3>
+                    <ul>
+                        <li>Thin layers of carbon outline organisms</li>
+                        <li>Mostly found for delicate organisms like ferns</li>
+                        <li>Preserves fine details as a "carbon film"</li>
+                        <li>Common for plant leaves and small animals</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Petrified Fossils" data-info="wood tree minerals replaced stone permineralization organic">
+                    <img src="https://images.pexels.com/photos/326951/pexels-photo-326951.jpeg?auto=compress&w=500" alt="Petrified Wood">
+                    <h3>Petrified Fossils</h3>
+                    <ul>
+                        <li>Organic material replaced by minerals</li>
+                        <li>Petrified wood is most famous example</li>
+                        <li>Process called permineralization</li>
+                        <li>Preserves original structure in stone</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Amber Fossils" data-info="tree resin insects preserved trapped spider ancient DNA">
+                    <img src="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&w=500" alt="Amber Fossil">
+                    <h3>Amber Fossils</h3>
+                    <ul>
+                        <li>Organisms trapped in hardened tree resin</li>
+                        <li>Preserve insects, spiders, and small creatures</li>
+                        <li>Can contain ancient DNA</li>
+                        <li>Show incredible detail and color</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Index Fossils" data-info="dating age period marker time geological widespread">
+                    <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&w=500" alt="Index Fossil">
+                    <h3>Index Fossils</h3>
+                    <ul>
+                        <li>Used to date rock layers and geological periods</li>
+                        <li>Organisms that lived for short time but widespread</li>
+                        <li>Help identify age of rock formations</li>
+                        <li>Examples: trilobites, ammonites</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Coprolites" data-info="fossilized dung poop feces diet food eating habits prehistoric">
+                    <img src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&w=500" alt="Coprolite">
+                    <h3>Coprolites</h3>
+                    <ul>
+                        <li>Fossilized dinosaur dung or feces</li>
+                        <li>Reveal diet and eating habits</li>
+                        <li>Can contain bones, seeds, or plant matter</li>
+                        <li>Important for understanding ecosystems</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Fossilized Eggs" data-info="dinosaur eggs nests embryos reproduction breeding">
+                    <img src="https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&w=500" alt="Fossilized Eggs">
+                    <h3>Fossilized Eggs</h3>
+                    <ul>
+                        <li>Preserved dinosaur eggs and nests</li>
+                        <li>Sometimes contain embryos inside</li>
+                        <li>Show reproduction and nesting behavior</li>
+                        <li>Found in large nesting colonies</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Skin Impressions" data-info="scales texture skin pattern surface fossil soft tissue">
+                    <img src="https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&w=500" alt="Skin Impression">
+                    <h3>Skin Impressions</h3>
+                    <ul>
+                        <li>Rare fossils showing skin texture</li>
+                        <li>Reveal scales, bumps, and skin patterns</li>
+                        <li>Formed under special preservation conditions</li>
+                        <li>Provide clues about dinosaur appearance</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Feather Fossils" data-info="feathered dinosaurs birds plumage flight evolution">
+                    <img src="https://images.pexels.com/photos/3225518/pexels-photo-3225518.jpeg?auto=compress&w=500" alt="Feather Fossil">
+                    <h3>Feather Fossils</h3>
+                    <ul>
+                        <li>Preserved feathers from dinosaurs and early birds</li>
+                        <li>Show evolution from dinosaurs to birds</li>
+                        <li>Reveal coloration in some cases</li>
+                        <li>Found in fine-grained sediments</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Trilobite Fossils" data-info="marine arthropod ancient ocean invertebrate extinct common">
+                    <img src="https://images.pexels.com/photos/8835734/pexels-photo-8835734.jpeg?auto=compress&w=500" alt="Trilobite Fossil">
+                    <h3>Trilobite Fossils</h3>
+                    <ul>
+                        <li>Ancient marine arthropods</li>
+                        <li>Lived 521 to 252 million years ago</li>
+                        <li>Very common index fossils</li>
+                        <li>Show incredible detail and diversity</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Ammonite Fossils" data-info="spiral shell marine cephalopod ocean ancient extinct">
+                    <img src="https://images.pexels.com/photos/3225519/pexels-photo-3225519.jpeg?auto=compress&w=500" alt="Ammonite Fossil">
+                    <h3>Ammonite Fossils</h3>
+                    <ul>
+                        <li>Extinct marine cephalopods</li>
+                        <li>Distinctive spiral shell pattern</li>
+                        <li>Related to modern octopus and squid</li>
+                        <li>Excellent index fossils</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Plant Fossils" data-info="fern leaf ancient vegetation prehistoric flora seed">
+                    <img src="https://images.pexels.com/photos/1001915/pexels-photo-1001915.jpeg?auto=compress&w=500" alt="Plant Fossil">
+                    <h3>Plant Fossils</h3>
+                    <ul>
+                        <li>Preserved ancient plants and vegetation</li>
+                        <li>Includes ferns, conifers, and flowering plants</li>
+                        <li>Show evolution of plant life</li>
+                        <li>Help reconstruct ancient climates</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Fossilized Teeth" data-info="teeth shark dinosaur predator carnivore diet enamel">
+                    <img src="https://images.pexels.com/photos/5538297/pexels-photo-5538297.jpeg?auto=compress&w=500" alt="Fossilized Teeth">
+                    <h3>Fossilized Teeth</h3>
+                    <ul>
+                        <li>Most commonly found fossils</li>
+                        <li>Teeth are hardest body parts</li>
+                        <li>Reveal diet and hunting behavior</li>
+                        <li>Shark teeth especially abundant</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Crinoid Fossils" data-info="sea lily marine stalked filter feeder ocean ancient">
+                    <img src="https://images.pexels.com/photos/3225520/pexels-photo-3225520.jpeg?auto=compress&w=500" alt="Crinoid Fossil">
+                    <h3>Crinoid Fossils</h3>
+                    <ul>
+                        <li>Ancient sea lilies or feather stars</li>
+                        <li>Filter feeders with stalks and arms</li>
+                        <li>Very common in Paleozoic seas</li>
+                        <li>Often preserved in limestone</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Brachiopod Fossils" data-info="shell marine clam-like ancient ocean invertebrate filter feeder">
+                    <img src="https://images.pexels.com/photos/8835735/pexels-photo-8835735.jpeg?auto=compress&w=500" alt="Brachiopod Fossil">
+                    <h3>Brachiopod Fossils</h3>
+                    <ul>
+                        <li>Ancient marine shellfish</li>
+                        <li>Look similar to clams but different anatomy</li>
+                        <li>Extremely abundant in fossil record</li>
+                        <li>Over 30,000 fossil species identified</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Coral Fossils" data-info="reef marine ocean colony polyp ancient tropical">
+                    <img src="https://images.pexels.com/photos/3225521/pexels-photo-3225521.jpeg?auto=compress&w=500" alt="Coral Fossil">
+                    <h3>Coral Fossils</h3>
+                    <ul>
+                        <li>Ancient coral reefs and colonies</li>
+                        <li>Build up limestone structures</li>
+                        <li>Indicate warm, shallow ancient seas</li>
+                        <li>Show climate and ocean conditions</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Stromatolite Fossils" data-info="bacteria oldest life ancient cyanobacteria layered microbial">
+                    <img src="https://images.pexels.com/photos/1001916/pexels-photo-1001916.jpeg?auto=compress&w=500" alt="Stromatolite Fossil">
+                    <h3>Stromatolite Fossils</h3>
+                    <ul>
+                        <li>Oldest fossils on Earth (3.5 billion years)</li>
+                        <li>Created by cyanobacteria</li>
+                        <li>Layered mound structures</li>
+                        <li>Evidence of earliest life forms</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Gastropod Fossils" data-info="snail shell spiral marine ancient mollusk">
+                    <img src="https://images.pexels.com/photos/8835736/pexels-photo-8835736.jpeg?auto=compress&w=500" alt="Gastropod Fossil">
+                    <h3>Gastropod Fossils</h3>
+                    <ul>
+                        <li>Ancient snails and slugs</li>
+                        <li>Spiral shell patterns</li>
+                        <li>Found in marine and freshwater</li>
+                        <li>One of most diverse fossil groups</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Belemnite Fossils" data-info="squid cephalopod marine extinct bullet shaped internal shell">
+                    <img src="https://images.pexels.com/photos/3225522/pexels-photo-3225522.jpeg?auto=compress&w=500" alt="Belemnite Fossil">
+                    <h3>Belemnite Fossils</h3>
+                    <ul>
+                        <li>Extinct squid-like creatures</li>
+                        <li>Bullet-shaped internal shells</li>
+                        <li>Common in Mesozoic seas</li>
+                        <li>Related to modern squid and cuttlefish</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Echinoid Fossils" data-info="sea urchin spines marine spherical ancient ocean">
+                    <img src="https://images.pexels.com/photos/8835737/pexels-photo-8835737.jpeg?auto=compress&w=500" alt="Echinoid Fossil">
+                    <h3>Echinoid Fossils</h3>
+                    <ul>
+                        <li>Ancient sea urchins and sand dollars</li>
+                        <li>Spherical or disc-shaped tests</li>
+                        <li>Five-fold symmetry pattern</li>
+                        <li>Common in marine sediments</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Fish Fossils" data-info="vertebrate scales fins ancient aquatic prehistoric swimming">
+                    <img src="https://images.pexels.com/photos/1001917/pexels-photo-1001917.jpeg?auto=compress&w=500" alt="Fish Fossil">
+                    <h3>Fish Fossils</h3>
+                    <ul>
+                        <li>Preserved ancient fish specimens</li>
+                        <li>Show evolution of vertebrates</li>
+                        <li>Include scales, fins, and skeletons</li>
+                        <li>Found in lake and ocean deposits</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Insect Fossils" data-info="bug ancient prehistoric trapped wings exoskeleton">
+                    <img src="https://images.pexels.com/photos/3225523/pexels-photo-3225523.jpeg?auto=compress&w=500" alt="Insect Fossil">
+                    <h3>Insect Fossils</h3>
+                    <ul>
+                        <li>Preserved ancient insects</li>
+                        <li>Often found in amber or fine sediment</li>
+                        <li>Show incredible wing and body detail</li>
+                        <li>Giant dragonflies and beetles discovered</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Mammal Fossils" data-info="prehistoric bones skull teeth ancient mammals ice age">
+                    <img src="https://images.pexels.com/photos/1001918/pexels-photo-1001918.jpeg?auto=compress&w=500" alt="Mammal Fossil">
+                    <h3>Mammal Fossils</h3>
+                    <ul>
+                        <li>Ancient mammal remains</li>
+                        <li>Include woolly mammoths and saber-toothed cats</li>
+                        <li>Show evolution from small to large mammals</li>
+                        <li>Ice Age fossils particularly well-preserved</li>
+                    </ul>
+                </div>
+                <div class="card" data-name="Reptile Fossils" data-info="ancient lizard turtle crocodile prehistoric scales">
+                    <img src="https://images.pexels.com/photos/3225524/pexels-photo-3225524.jpeg?auto=compress&w=500" alt="Reptile Fossil">
+                    <h3>Reptile Fossils</h3>
+                    <ul>
+                        <li>Ancient reptiles before dinosaurs</li>
+                        <li>Include early crocodiles and turtles</li>
+                        <li>Show transition from water to land</li>
+                        <li>Reveal reptile diversity through time</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-section">
+                <strong>How Fossils Form:</strong><br>
+                Fossils usually form when organisms are quickly buried by sediment, followed by mineralization. Most soft parts decay, but bones, shells, or leaves may become stone over millions of years. Erosion or excavation eventually exposes fossils for scientists to study. The process requires specific conditions including rapid burial, lack of oxygen, and the presence of mineral-rich water.
+            </div>
+            <div class="info-section">
+                <strong>Fossil Fun Facts:</strong><br>
+                Most fossils are sea creatures, even those found far from the ocean today. Fossils provide clues to evolution and Earth's history spanning over 3.5 billion years. Paleontologists use special tools to carefully reveal fossil details without damaging them. Only about 1% of all species that ever lived became fossils due to the rare conditions required for fossilization.
+            </div>
+        </fieldset>
+        <footer>
+            &copy; 2025 Dinosaurs &amp; Fossils: Wonders of Prehistoric Life. All educational content and images used for non-commercial educational purposes only.
+        </footer>
+    </main>
+
+    <script>
+        function searchFossils() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            let found = false;
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const info = card.getAttribute('data-info').toLowerCase();
+                
+                if (name.includes(filter) || info.includes(filter)) {
+                    card.style.display = 'flex';
+                    if (!found) {
+                        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    }
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
